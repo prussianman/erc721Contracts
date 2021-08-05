@@ -1,0 +1,19 @@
+{
+  "name": "freshstart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brayden Leo",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.2.0",
+    "install": "^0.13.0",
+    "npm": "^7.20.3",
+    "pg": "^8.7.1",
+    "truffle": "^5.4.3",
+    "truffle-hdwallet-provider": "^1.0.17"
+  }
+}
