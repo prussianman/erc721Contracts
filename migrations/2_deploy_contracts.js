@@ -1,6 +1,6 @@
 // const { toChecksumAddress } = require('ethereum-checksum-address')
 
-var OIO_mother = artifacts.require("./OIO_mother.sol");
+var OIO_mother = artifacts.require("OIO_mother");
 // var daughter_contract = artifacts.require("./daughter_contract.sol");
 
 
