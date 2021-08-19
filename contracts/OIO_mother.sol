@@ -2,6 +2,8 @@
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "./daughter_contract.sol";
+
 
 // public - all can access
 // external - Cannot be accessed internally, only externally
@@ -284,18 +286,18 @@ contract OIO_mother {
     }
 
     //START OF COMMENT
-    // function deployArtistContract(address _Administrator, address _artist_address, uint256 _artistId) public payable onlyOwner {
+    function deployArtistContract(address _Administrator, address _artist_address, uint256 _artistId) public payable onlyOwner {
 
-    //     // address daughter_address; 
-    //     address daughter;
-    //     address _OIO=address(this);
-    //     // daughter_contract daughter = new daughter_contract(_OIO,_Administrator,_artist_address);
-    //     // daughter_address = address(daughter_contract);
-    //     daughter = address(new daughter_contract(_OIO,_Administrator,_artist_address));
+        // address daughter_address; 
+        address daughter;
+        address _OIO=address(this);
+        // daughter_contract daughter = new daughter_contract(_OIO,_Administrator,_artist_address);
+        // daughter_address = address(daughter_contract);
+        daughter = address(new daughter_contract(_OIO,_Administrator,_artist_address));
         
-    //     // once initialized, log data into mother contract
-    //     addArtistInfo(_artistId, _artist_address, daughter);
-    // }
+        // once initialized, log data into mother contract
+        addArtistInfo(_artistId, _artist_address, daughter);
+    }
 
 
 
