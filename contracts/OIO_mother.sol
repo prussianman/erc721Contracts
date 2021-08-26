@@ -293,7 +293,7 @@ contract OIO_mother {
         address _OIO=address(this);
         // daughter_contract daughter = new daughter_contract(_OIO,_Administrator,_artist_address);
         // daughter_address = address(daughter_contract);
-        daughter = address(new daughter_contract(_OIO,_Administrator,_artist_address));
+       //  daughter = address(new daughter_contract(_OIO,_Administrator,_artist_address));
         
         // once initialized, log data into mother contract
         addArtistInfo(_artistId, _artist_address, daughter);
