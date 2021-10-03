@@ -1,2 +1,2 @@
-# freshStart
- Smoothing the process out
+# erc721Contracts
+Used Truffle to deploy Contacts
